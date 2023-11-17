@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Swapi: Star Wars Results
+{% endblock %}
+
+{% block content %}
+<h1>SWAPI Results</h1>
+
+{% if data %}
+    <section>
+        <p>Name: {{ data.name }}</p>
+        <p>Height: {{ data.height }}</p>
+        <p>Mass: {{ data.mass }}</p>
+        <p>Hair Color: {{ data.hair_color }}</p>
+        <p>Eye Color: {{ data.eye_color }}</p>
+
+        
+    </section>
+{% else %}
+    <p>No data found🫠.</p>
+{% endif %}
+
+{% endblock %}

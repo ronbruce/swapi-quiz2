@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Star Wars Character Search</title>
+    </head>
+    <body>
+        <h1>Star Wars Character Search</h1>
+        <form action="{{ url_for('swapi_results') }}" method="POST">
+            <label for="category">Enter Category:</label>
+            <input type="text" id="category" name="category" required>
+            <label for="character_id">Enter Item ID:</label>
+            <input type="text" id="character_id" name="id" required>
+            <button type="submit">Search</button>
+        </form>
+    </body>
+</html> 
