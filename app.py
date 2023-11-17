@@ -1,6 +1,20 @@
 from flask import Flask, request, render_template
 import requests # Import the requests module
 
+# TODO: Stretch Challenges 2
+# The homeworld property is a URL to the homeworl at the SWAPI. 
+# Make another request and get the homeworld data and display the name of the hoemworld.
+
+
+# TODO Stretch Challenge 3
+#Displaying Lists
+#Every character has a films property that is a list of the films they appeared in. 
+# This list is a list of URLs to those films on SWAPI. Loop over this list, 
+# make a request to get the data for each film and display the name of each film.
+
+# TODO Style your work. This is open ended put as much time into this as you like.
+# Style the form elements and the the output data.
+
 app = Flask(__name__, template_folder="templates")
 
 SWAPI_URL = 'https://swapi.py4e.com/api/'
